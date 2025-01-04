@@ -1,0 +1,118 @@
+.ContainerGlobal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial;
+    margin-top: 5%;
+}
+body{
+  background-color: #7514c0;
+}
+.description{
+  text-align: center;
+  margin-left: 50px;
+}
+.Task:hover{
+  transform: scale(1.05);
+}
+.Container{
+  background-color: #f9f6fb;
+  padding: 5%;
+  border: 1px solid #d7d6d7;
+  width: 630px;
+  border-radius: 30px;
+}
+.Container .Task{
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    border: 1px solid #961af6;
+    border-left: 10px solid #961af6;
+    background-color: #f9f6fb;
+    border-radius: 20px;
+    padding: 1% 5%;
+    margin: 1% 0;
+    transition: all 0.5s ease-in-out;
+}
+  .Container .Task .checkbox-article{
+    display: flex;
+    align-items: center;
+  }
+  .Container .Task .checkbox-article input{
+    appearance: none; 
+    width: 20px;
+    height: 20px;
+    border: 2px solid #961af6;
+    border-radius: 50%; /* Optional: rounded corners */
+    background-color: #ffffff5d;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+  }
+  .Container .Task .checkbox-article input[type="checkbox"]:hover {
+    border-color: #961af6;; /* Change border color on hover */
+  }
+  .Container .Task .checkbox-article input[type="checkbox"]:checked {
+    background-color: #961af6;; /* Change background color when checked */
+    border-color: #961af6; /* Optional: Change border color too */
+    content: '✔'; /* Optional: Add a checkmark effect */
+    color: white;
+    
+  }
+  .Container .Task .checkbox-article input[type="checkbox"]:checked::before {
+    margin-top: -10%;
+    content: "✔";
+    font-size: 15px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .checkbox-article input:checked + h3{
+    text-decoration: line-through;
+  }
+  .Task .checkbox-article input:checked{
+    border: gray solid 1px;
+    background-color: black;
+  }
+  .Container .Task .Buttons{
+    display: flex;
+    align-items: center;
+  }
+  .Container input[type=submit]{
+    background-color: #961af6;
+    color: white;
+    width: 60px;
+    padding: 2%;
+    border-radius: 10px;
+    transition: all 0.5s ease-in-out;
+  }
+  .Container input[type=submit]:hover{
+    background-color: #7514c0;
+  }
+  a{
+      text-decoration: none;
+      color: black;
+  }
+  .form input,textarea{
+    display: block;
+    width: 500px;
+    height: 30px;
+    margin: 3% 0%;
+  }
+  .form{
+    background-color: #f9f6fb;
+    padding: 5%;
+    border: 1px solid #d7d6d7;
+    width: 510px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+  }
+  .form input[type=submit]{
+    background-color: #961af6;
+    color: white;
+    font-weight: bold;
+  }
+  textarea{
+    height: 50px;
+  }
