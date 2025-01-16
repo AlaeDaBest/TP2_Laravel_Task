@@ -18,4 +18,5 @@ Route::get('/', function () {
 });
 use App\Http\Controllers\TaskController;
 Route::resource('/tasks',TaskController::class);
-Route::patch('tasks/toggleStatus/{task}',[TaskController::class,'toggleStatus'])->name('tasks.toggleStatus');
+Route::post('tasks/toggleStatus/{task}',[TaskController::class,'toggleStatus'])->name('tasks.toggleStatus');
+// Route::patch('tasks/toggleStatus/{task}',[TaskController::class,'toggleStatus'])->name('tasks.toggleStatus');
